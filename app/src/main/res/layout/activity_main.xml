@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.acadgild.balu.acd_an_session_2_assignment_3_main.MainActivity"
+    android:background="@color/colorBlack">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/edit_text_height"
+        android:text="@string/enter_card_balance"
+        android:id="@+id/textView1"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textColor="@color/colorWhite" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:id="@+id/editText1"
+        android:text="xxxxxxxxx"
+        android:editable="true"
+        android:background="@drawable/edittextstyle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/edit_text_height"
+        android:text="@string/enter_yearly_interest_rate"
+        android:id="@+id/textView2"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:layout_alignTop="@+id/editText2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:id="@+id/editText2"
+        android:text="xxxxxxxxx"
+        android:editable="true"
+        android:background="@drawable/edittextstyle"
+        android:layout_below="@+id/editText1"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/edit_text_height"
+        android:text="@string/enter_minimum_payment"
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:layout_alignTop="@+id/editText3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:id="@+id/editText3"
+        android:text="xxxxxxxxx"
+        android:editable="true"
+        android:background="@drawable/edittextstyle"
+        android:layout_below="@+id/editText2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/edit_text_height"
+        android:text="@string/final_card_balance"
+        android:id="@+id/textView4"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:id="@+id/editText4"
+        android:text="xxxxxxxxx"
+        android:editable="true"
+        android:background="@drawable/edittextstyle"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/edit_text_height"
+        android:text="@string/months_remaining"
+        android:id="@+id/textView5"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:layout_alignTop="@+id/editText5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:id="@+id/editText5"
+        android:text="xxxxxxxxx"
+        android:editable="true"
+        android:background="@drawable/edittextstyle"
+        android:layout_below="@+id/editText4"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/edit_text_height"
+        android:text="@string/interest_paid_will_be"
+        android:id="@+id/textView6"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:id="@+id/editText6"
+        android:text="xxxxxxxxx"
+        android:editable="true"
+        android:background="@drawable/edittextstyle"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignLeft="@+id/editText5"
+        android:layout_alignStart="@+id/editText5" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/compute"
+        android:id="@+id/button1"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
